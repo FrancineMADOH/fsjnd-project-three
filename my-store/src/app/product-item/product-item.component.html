@@ -1,1 +1,11 @@
-<p>product-item works!</p>
+<div class="card product" style="width: 15rem;height: auto;">
+    <a routerLink="/products/{{product.id }}" routerLinkActive="router-link-active" >
+        <img class="card-img-top" src="{{product.url}}" alt="{{product.name}}">
+    </a>
+    <div class="card-body">
+      <h5 class="card-title">{{product.name  }} </h5>
+      <p class="card-text text-center">{{product.price | currency:'FCFA'}} </p>
+      <p *ngIf="path=='/cart' ">Total Amount: {{product.reservation}}</p>
+      <a href="#" class="btn add-product">Go somewhere</a>
+    </div>
+  </div>

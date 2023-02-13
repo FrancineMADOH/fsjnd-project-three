@@ -1,0 +1,9 @@
+.card{
+    padding: 20px;
+    margin: 20px;
+}
+
+.card-title{
+    text-align:center;
+    color: blueviolet;
+}
