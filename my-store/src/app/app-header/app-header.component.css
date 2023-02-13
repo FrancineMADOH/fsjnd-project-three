@@ -1,0 +1,13 @@
+nav{
+    background-color: blueviolet;
+    padding:5px;
+}
+.nav-link{
+    color:#fff;
+}
+.navbar-brand{
+    font-weight: bold;
+    font-style: italic;
+    color:#fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
