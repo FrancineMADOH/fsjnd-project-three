@@ -3,9 +3,11 @@ h4{
 }
 
 button:disabled{
-    color:#777;
+    background-color:#e6e0e0;
+   color:blueviolet;
 }
 
 button{
-    color:blueviolet;;
+    background-color:blueviolet;
+    color:#fff;
 }

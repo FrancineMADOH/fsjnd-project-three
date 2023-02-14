@@ -11,7 +11,6 @@ import { ProductItemDetailComponent } from './product-item-detail/product-item-d
 import { ProductItemComponent } from './product-item/product-item.component';
 import { ConfirmationComponent } from './confirmation/confirmation.component';
 import { CartComponent } from './cart/cart.component';
-import { AboutComponent } from './about/about.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AppFooterComponent } from './app-footer/app-footer.component';
 import { AddToCartComponent } from './add-to-cart/add-to-cart.component';
@@ -27,7 +26,6 @@ import { PurchaseFormComponent } from './purchase-form/purchase-form.component';
     ProductItemComponent,
     ConfirmationComponent,
     CartComponent,
-    AboutComponent,
     AppFooterComponent,
     AddToCartComponent,
     ShoppingCartItemComponent,
