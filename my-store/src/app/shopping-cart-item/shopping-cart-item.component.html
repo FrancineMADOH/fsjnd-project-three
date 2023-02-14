@@ -1,0 +1,16 @@
+<div class="card product" style="width: 15rem;height: auto;">
+    <a routerLink="/products/{{shoppingCartItem.id }}" routerLinkActive="router-link-active" >
+        <img class="card-img-top" src="{{shoppingCartItem.url}}" alt="{{shoppingCartItem.name}}">
+    </a>
+    <div class="card-body">
+      <h5 class="card-title">{{shoppingCartItem.name  }}</h5>
+      <p class="card-text text-center">{{shoppingCartItem.price | currency:'FCFA'}} </p>
+      <p class="">{{shoppingCartItem.reservation}}</p>
+      <p>
+        <input class="form-control item-amount-selector" type="number" 
+        min="1" max="{{shoppingCartItem.qty_available}}" name="shoppingCartItem.qty_available"
+         [(ngModel)]="shoppingCartItem.reservation">
+      </p>
+    </div>
+    <button class="btn btn-danger remove" (click)=" removeProductFromCart(shoppingCartItem)">Remove from cart</button>
+</div>

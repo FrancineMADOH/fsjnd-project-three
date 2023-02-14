@@ -1,10 +1,17 @@
-<div class="card product-detail" style="width: 20rem;height: auto;">
-    <img class="card-img-top" src="{{product.url}}" alt="{{product.name}}">
-    <div class="card-body">
-      <h4 class="card-title">{{ product.name  }} </h4>
-        <p class="card-text text-center">{{product.description}} </p>
-      <p class="card-text text-center">{{product.price | currency:'FCFA'}} </p>
-      <app-add-to-cart [product]="product"></app-add-to-cart>
-      <a routerLink="/products" routerLinkActive="router-link-active"> Return to product list</a>
+
+  <div class="container product-detail">
+    <div class="my-5">
+      <h2>{{ title}}</h2>
+    </div>
+    
+    <div class="card" style="width: 30rem;">
+      <img style="height: 500px; " class="card-img-top" src="{{product.url}}" alt="{{product.name}}">
+      <div class="card-body">
+        <h4 class="card-title">{{ product.name  }} </h4>
+          <p class="card-text text-center">{{product.description}} </p>
+        <p class="card-text text-center">{{product.price | currency:'FCFA'}} </p>
+        <app-add-to-cart [product]="product"></app-add-to-cart>
+        <a routerLink="/products" routerLinkActive="router-link-active"> Return to product list</a>
+      </div>
     </div>
   </div>

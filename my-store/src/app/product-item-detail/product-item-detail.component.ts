@@ -12,6 +12,7 @@ import { Product } from '../models/product';
 export class ProductItemDetailComponent implements  OnInit {
   id=0;
   product:Product;
+  title:string = 'Product details'
 
   constructor(private router:ActivatedRoute, private productService:ProductService){
     this.product = {

@@ -1,1 +1,20 @@
-<p>cart works!</p>
+<div class="empty-cart" *ngIf="shoppingCart.length ===0">
+    <h2>Your cart is empty! </h2>
+    <a routerLink='/products'>Return to product list</a>
+</div>
+
+<div class="shopping-card-list">
+    <div class="shopping-list">
+        <app-shopping-cart-item *ngFor="let element of shoppingCart" [shoppingCartItem]="element" ></app-shopping-cart-item>
+    </div>
+    
+    <div class="purchase-form">
+        <app-purchase-form></app-purchase-form>
+        <p *ngIf="total>0" >
+            <span class="total"> Total: {{total}} </span>
+        </p>
+    </div>
+    
+</div>
+
+

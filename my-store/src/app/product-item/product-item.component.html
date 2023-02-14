@@ -6,8 +6,7 @@
       <h5 class="card-title">{{product.name  }} </h5>
       <p class="card-text text-center">{{product.price | currency:'FCFA'}} </p>
       <p *ngIf="path=='/cart' ">Total Amount: {{product.reservation}}</p>
-      <app-add-to-cart
-      *ngIf="path=='/products'" [product]="product"
+      <app-add-to-cart *ngIf="path=='/products'" [product]="product"
       ></app-add-to-cart>
     </div>
   </div>

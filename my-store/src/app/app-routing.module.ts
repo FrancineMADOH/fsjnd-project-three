@@ -10,7 +10,7 @@ import {ProductItemDetailComponent} from './product-item-detail/product-item-det
 const routes: Routes = [
   {path: '', redirectTo:'products', pathMatch: 'full'},
   {path:'products', component:ProductListComponent},
-  {path:"product/:id", component:ProductItemDetailComponent},
+  {path:"products/:id", component:ProductItemDetailComponent},
   {path:"cart", component:CartComponent},
   {path:"confirmation", component:ConfirmationComponent},
   {path:"about", component:AboutComponent},

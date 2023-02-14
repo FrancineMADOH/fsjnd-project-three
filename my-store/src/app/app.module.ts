@@ -15,6 +15,8 @@ import { AboutComponent } from './about/about.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AppFooterComponent } from './app-footer/app-footer.component';
 import { AddToCartComponent } from './add-to-cart/add-to-cart.component';
+import { ShoppingCartItemComponent } from './shopping-cart-item/shopping-cart-item.component';
+import { PurchaseFormComponent } from './purchase-form/purchase-form.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { AddToCartComponent } from './add-to-cart/add-to-cart.component';
     CartComponent,
     AboutComponent,
     AppFooterComponent,
-    AddToCartComponent
+    AddToCartComponent,
+    ShoppingCartItemComponent,
+    PurchaseFormComponent
   ],
   imports: [
     BrowserModule,
