@@ -1,0 +1,14 @@
+.confirm-order{
+    padding:20px;
+    font-size: 1.5em;
+    max-width: 750px;
+    border:solid 1px solid blueviolet;
+}
+strong ,h4{
+    color: blueviolet;
+}
+
+a{
+    text-decoration: none;
+    color: blueviolet;
+}

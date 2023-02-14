@@ -1,5 +1,5 @@
 import { Component,OnInit } from '@angular/core';
-import {ActivatedRoute}from '@angular/router';
+import {ActivatedRoute} from '@angular/router';
 import {ProductService } from '../services/product.service'
 import { Product } from '../models/product';
 
@@ -27,11 +27,11 @@ export class ProductItemDetailComponent implements  OnInit {
   
 
   ngOnInit():void{
-    //@ts-ignore
-    this.router.params.subscribe((data)=>(this.id = parseInt(data['id'],10)));
+    this.router.params.subscribe((data)=>(this.id = parseInt(data.id,10)));
     this.productService.getAllProducts().subscribe((data)=>{
-      this.product = data.find((el)=> el.id===this.id)  as Product
+      this.product = data.find((el)=> el.id===this.id) as unknown  as Product
     })
   }
 
 }
+

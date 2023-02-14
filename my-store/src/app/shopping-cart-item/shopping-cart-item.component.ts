@@ -21,11 +21,16 @@ export class ShoppingCartItemComponent implements OnInit {
       reservation:0
     }
   }
-  ngOnInit(){}
+  ngOnInit():void{}
 
-  removeProductFromCart(shp:Product):void{
-    this.removeProduct.emit(shp)
+  removeProductFromCart(shoppingCartItem:Product):void{
+    console.log('function work')
+    this.removeProduct.emit(shoppingCartItem)
   }
 
 }
+
+
+
+
 

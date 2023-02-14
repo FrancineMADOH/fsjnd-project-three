@@ -7,6 +7,7 @@ import { Router } from '@angular/router'
   styleUrls: ['./purchase-form.component.css']
 })
 export class PurchaseFormComponent implements OnInit {
+  title = "Enter your informations"
   name:string = '';
   address:string = '';
   cardInfos:string='';

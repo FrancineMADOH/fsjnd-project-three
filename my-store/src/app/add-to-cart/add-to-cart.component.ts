@@ -1,7 +1,6 @@
 import { Component,OnInit, Input } from '@angular/core';
 import {Product} from '../models/product';
 import {ShoppingCartService} from '../services/shopping-cart.service'
-import { TitleStrategy } from '@angular/router';
 
 @Component({
   selector: 'app-add-to-cart',
@@ -10,9 +9,9 @@ import { TitleStrategy } from '@angular/router';
 })
 export class AddToCartComponent implements OnInit {
 
-  @Input() product:Product;
+  @Input()product:Product;
   reservation =0;
-  qty_available:number[] = [];
+  qtyAvailable:number[] = [];
 
 
   constructor(private shoppingcartService:ShoppingCartService){
@@ -26,14 +25,15 @@ export class AddToCartComponent implements OnInit {
     }
   }
   ngOnInit(){
-    this.qty_available = [
+    this.qtyAvailable = [
       ...Array(this.product.qty_available).keys()
     ].map((el)=>el+1);
   }
 
   ngDocheck():void{
-    if(this.qty_available.length !== this.product.qty_available){
-      this.qty_available = [
+
+    if(this.qtyAvailable.length !== this.product.qty_available){
+      this.qtyAvailable = [
         ...Array(this.product.qty_available).keys()
       ].map((el)=>el+1)
     }
@@ -46,3 +46,4 @@ export class AddToCartComponent implements OnInit {
   }
 
 }
+

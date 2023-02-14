@@ -1,12 +1,12 @@
-<div class="confirm-order">
+<div class="confirm-order container">
     <div class="header">
-        <h4>Order Confirm !</h4>
-        <p>{{name}} Your order is confirm, Total ammount: <strong>{{total}}</strong></p>
+        <h4 class="m-5">Order Recorded! !</h4>
+        <p class="m-5">{{name.toUpperCase()}} . Your order is confirm. </p>
+        <p class="m-5">Total ammount: <strong style="color: blueviolet;">{{total | currency:'FCFA'}}</strong></p>
     </div>
 
-    <div class="invoice">
-        <div></div>
+    <div class="m-5">
+      <p>Please allow 1-3 business day(s) for shipping.</p>
+      <a  routerLink="/products">Return Product list</a>
     </div>
 </div>
-
-

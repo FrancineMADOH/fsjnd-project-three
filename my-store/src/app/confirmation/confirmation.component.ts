@@ -11,14 +11,12 @@ import {Router,ActivatedRoute } from '@angular/router';
 
 export class ConfirmationComponent implements OnInit {
   name = '';
-  address = '';
   shoppinCartList:Product[]=[];
   total = 0;
 
   constructor(private route:ActivatedRoute, private shoppingcartService:ShoppingCartService){}
   ngOnInit():void{
     this.name = this.route.snapshot.paramMap.get('name') as string;
-    this.address = this.route.snapshot.paramMap.get('address') as string;
     this.shoppinCartList = this.shoppingcartService.getShoppingCart();
     this.total= this.shoppingcartService.cartTotal();
     this.shoppingcartService.resetCart();

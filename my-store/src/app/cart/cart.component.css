@@ -1,4 +1,18 @@
 .shopping-card-list{
     display: flex;
     flex-wrap: wrap;
+    padding:20px;
+}
+.shopping-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+.empty-cart{
+    color: blueviolet;
+    text-align:center;
+    font-weight:bold;
+}
+
+a{
+    text-decoration: none;
 }
