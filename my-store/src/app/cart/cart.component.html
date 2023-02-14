@@ -4,11 +4,11 @@
 </div>
 
 <div class="shopping-card-list">
-    <div class="shopping-list">
+    <div class="shopping-list col-lg-6">
         <app-shopping-cart-item *ngFor="let element of shoppingCart" [shoppingCartItem]="element" ></app-shopping-cart-item>
     </div>
     
-    <div class="purchase-form">
+    <div class="purchase-form col-lg-6">
         <app-purchase-form></app-purchase-form>
         <p *ngIf="total>0" >
             <span class="total"> Total: {{total}} </span>
