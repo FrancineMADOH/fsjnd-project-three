@@ -7,6 +7,7 @@ import { Router } from '@angular/router'
   styleUrls: ['./product-item.component.css']
 })
 export class ProductItemComponent implements OnInit {
+  
   @Input() product:Product;
   path: string;
   reservation = 0;
