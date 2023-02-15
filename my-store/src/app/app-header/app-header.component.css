@@ -9,9 +9,6 @@ nav{
     font-weight: bold;
     font-style: italic;
     color:#fff;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-ul{
-    align-items: right;
+    font-size: 2em;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
