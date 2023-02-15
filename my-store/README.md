@@ -26,13 +26,3 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
-
-https://getbootstrap.com/docs/4.0/components/card/
-https://stackoverflow.com/questions/70106472/property-fname-comes-from-an-index-signature-so-it-must-be-accessed-with-fn
-https://github.com/ionic-team/starters/issues/682
-https://stackoverflow.com/questions/34561168/angular-exception-cant-bind-to-ngforin-since-it-isnt-a-known-native-propert
-https://stackoverflow.com/questions/54374400/how-to-fix-error-cannot-match-any-routes-url-segment-anythongs
-https://getbootstrap.com/docs/4.0/components/forms/
-https://stackoverflow.com/questions/70106472/property-fname-comes-from-an-index-signature-so-it-must-be-accessed-with-fn
-https://stackoverflow.com/questions/36076700/what-is-the-proper-use-of-an-eventemitter
-https://angular.io/api/core/EventEmitter
