@@ -1,0 +1,12 @@
+<div class="product-details-container">
+    <img src="{{ productItem.url }}" alt="{{ productItem.name }}">
+    <div class="product-info">
+      <div class="product-data">
+        <h2>{{ productItem.name }}</h2>
+        <p>{{ productItem.description }}</p>
+        <p>{{ productItem.price | currency :'EUR'}}</p>
+      </div>
+      <app-add-to-cart [product]="productItem"></app-add-to-cart>
+      <a routerLink="/products" routerLinkActive="router-link-active"> Back to Products</a>
+    </div>
+  </div>

@@ -11,6 +11,13 @@ a {
     text-decoration: none;
     color: blueviolet;
 }
+button {
+    background-color:  blueviolet;
+ }
+button:disabled {
+   background-color: #f0eded;
+   color: blueviolet;
+}
 h2,h4{
     text-decoration: none;
     color: blueviolet;

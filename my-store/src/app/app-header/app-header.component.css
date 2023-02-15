@@ -11,3 +11,7 @@ nav{
     color:#fff;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+ul{
+    align-items: right;
+}

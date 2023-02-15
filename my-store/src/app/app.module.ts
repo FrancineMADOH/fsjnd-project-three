@@ -16,6 +16,7 @@ import { AppFooterComponent } from './app-footer/app-footer.component';
 import { AddToCartComponent } from './add-to-cart/add-to-cart.component';
 import { ShoppingCartItemComponent } from './shopping-cart-item/shopping-cart-item.component';
 import { PurchaseFormComponent } from './purchase-form/purchase-form.component';
+import { DescriptionComponent } from './description/description.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { PurchaseFormComponent } from './purchase-form/purchase-form.component';
     AppFooterComponent,
     AddToCartComponent,
     ShoppingCartItemComponent,
-    PurchaseFormComponent
+    PurchaseFormComponent,
+    DescriptionComponent,
   ],
   imports: [
     BrowserModule,

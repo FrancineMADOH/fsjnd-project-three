@@ -1,10 +1,12 @@
 
 <div class="text-center">
     <form (ngSubmit)="addToCart(product)" #form="ngForm">
-        <select class="form-control" name="availableQuantity" [(ngModel)]="reservation">
+        <select class="form-control" name="reservation" [(ngModel)]="reservation">
             <option value="0" selected disabled >Amount</option>
-            <option *ngFor="let qty of qtyAvailable" value="{{qty}} ">{{qty}}</option>
+            <option *ngFor="let qty of qtyAvailable" value="{{qty}} ">{{ qty }}</option>
         </select>
         <button type="submit" class="btnt btn-danger text-center my-2 add-product" [disabled]="reservation<1" >Add to Cart</button>
     </form>
 </div>
+
+  

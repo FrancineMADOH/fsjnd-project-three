@@ -16,7 +16,7 @@ export class PurchaseFormComponent implements OnInit {
 
   ngOnInit():void{}
 
-  OnSubmit():void{
+  OnPurchase():void{
     this.router.navigate([
       'confirm-order',
       {name:this.name, address:this.address}

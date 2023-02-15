@@ -30,15 +30,6 @@ export class AddToCartComponent implements OnInit {
     ].map((el)=>el+1);
   }
 
-  ngDocheck():void{
-
-    if(this.qtyAvailable.length !== this.product.qty_available){
-      this.qtyAvailable = [
-        ...Array(this.product.qty_available).keys()
-      ].map((el)=>el+1)
-    }
-  }
-
   addToCart(product:Product):void{
     this.product.reservation = this.reservation;
     this.shoppingcartService.addToCart(product);
