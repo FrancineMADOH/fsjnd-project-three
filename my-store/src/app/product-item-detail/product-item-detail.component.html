@@ -10,11 +10,7 @@
         <h4 class="card-title">{{ product.name  }} </h4>
           <p class="card-text text-center">{{product.description}} </p>
         <p class="card-text text-center">{{product.price | currency:'FCFA'}} </p>
-        
-        <form (ngSubmit)="addToCart(product)" #form="ngForm">
-          <input type="number" name="reservation" [(ngModel)]="reservation" min="1"><br>
-          <button type="submit" class="btnt  text-center my-2 add-product" [disabled]="reservation<1" >Add to Cart</button>
-      </form>
+        <div class="text-center">
       
         <a routerLink="/products" routerLinkActive="router-link-active"> Return to product list</a>
       </div>

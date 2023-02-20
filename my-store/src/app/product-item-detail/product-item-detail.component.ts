@@ -1,8 +1,9 @@
-import { Component,OnInit } from '@angular/core';
+import { Component,OnInit,Input,Output,EventEmitter } from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
 import {ProductService } from '../services/product.service'
 import { Product } from '../models/product';
-import {ShoppingCartService} from '../services/shopping-cart.service'
+import {ShoppingCartService} from '../services/shopping-cart.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-product-item-detail',
@@ -11,15 +12,18 @@ import {ShoppingCartService} from '../services/shopping-cart.service'
 })
 
 export class ProductItemDetailComponent implements  OnInit {
+  @Input() product:Product;
+  path: string;
   id=0;
-  product:Product;
   title:string = 'Product details'
   reservation =0;
   qtyAvailable:number[] = [];
 
 
   constructor(
+
     private route:ActivatedRoute, 
+    private router:Router,
     private productService:ProductService,
     private shoppingcartService:ShoppingCartService){
     this.product = {
@@ -29,18 +33,20 @@ export class ProductItemDetailComponent implements  OnInit {
       description:'',
       qty_available:0,
     }
+    this.path = '';
+    
   }
   
 
   ngOnInit():void{
+    this.path = this.router.url;
     this.route.params.subscribe((data)=>(this.id = parseInt(data.id,10)));
+    
 
     this.productService.getAllProducts().subscribe((data)=>{
       this.product = data.filter(({id}) => id === this.id)[0]
-      //this.product = data.find((el)=> el.id===this.id) as unknown  as Product
       
     });
-
     this.qtyAvailable = [
       ...Array(this.product.qty_available).keys()
     ].map((el)=>el+1);

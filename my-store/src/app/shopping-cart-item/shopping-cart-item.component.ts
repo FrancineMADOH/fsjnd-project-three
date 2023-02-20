@@ -9,8 +9,9 @@ import {Product} from '../models/product';
 export class ShoppingCartItemComponent implements OnInit {
   @Input() shoppingCartItem:Product;
   @Output() removeProduct: EventEmitter<Product> = new EventEmitter;
-  
 
+ 
+ 
   constructor(){
     this.shoppingCartItem = {
       name:" ",
@@ -22,10 +23,11 @@ export class ShoppingCartItemComponent implements OnInit {
     }
   }
   ngOnInit():void{}
+  
 
   removeProductFromCart(shoppingCartItem:Product):void{
-    console.log('function work')
     this.removeProduct.emit(shoppingCartItem)
+    alert(`${shoppingCartItem.reservation}  ${shoppingCartItem.name}  will be removed from cart!`)
   }
 
 }

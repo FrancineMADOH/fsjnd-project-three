@@ -12,8 +12,8 @@ export class ShoppingCartService {
     return this.shoppingCart;
   }
 
-  addToCart(product:Product):void{
-    this.shoppingCart.push(product);
+  addToCart(product:Product):void{   
+      this.shoppingCart.push(product);
   }
 
   cartTotal():number{

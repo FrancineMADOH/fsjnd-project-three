@@ -11,6 +11,7 @@ import {Router,ActivatedRoute } from '@angular/router';
 
 export class ConfirmationComponent implements OnInit {
   name = '';
+  totalPrice = 0;
   shoppinCartList:Product[]=[];
   total = 0;
 

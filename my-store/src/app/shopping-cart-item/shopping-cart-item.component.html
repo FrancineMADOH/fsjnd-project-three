@@ -7,10 +7,10 @@
       <p class="card-text text-center">{{shoppingCartItem.price | currency:'FCFA'}} </p>
       <p class=""> Reservation:{{shoppingCartItem.reservation}}</p>
       <p>
-        <input class="form-control" type="number" 
-        min="1" max="{{shoppingCartItem.qty_available}}" name="shoppingCartItem.reservation"
-         [(ngModel)]="shoppingCartItem.reservation">
-      </p>
+      <!-- <input class="form-control" type="number" 
+        min="1" max="{{shoppingCartItem.qty_available -(shoppingCartItem.reservation||0)}}" name="{{shoppingCartItem.reservation}}"
+         [(ngModel)]="shoppingCartItem.reservation" >  
+      </p> -->
     </div>
     <button class="btn btn-danger remove" (click)=" removeProductFromCart(shoppingCartItem)">Remove from cart</button>
 </div>
