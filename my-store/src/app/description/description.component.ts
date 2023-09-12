@@ -23,9 +23,9 @@ export class DescriptionComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.router.params.subscribe((data) => (this.id = parseInt(data.id, 10)));
-    this.productService.getAllProducts().subscribe((data) => {
-      this.productItem = data.find((el) => el.id === this.id) as unknown as Product;
+    this.router.params.subscribe((data:any) => (this.id = parseInt(data.id, 10)));
+    this.productService.getAllProducts().subscribe((data:any) => {
+      this.productItem = data.find((el:any) => el.id === this.id) as unknown as Product;
     });
   }
 

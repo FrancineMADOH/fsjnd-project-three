@@ -1,6 +1,6 @@
 # MyStore
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.5.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.5. This app is deployed on netlify,  an can be access via the link `https://teal-queijadas-a73d58.netlify.app/products`
 
 ## Development server
 
